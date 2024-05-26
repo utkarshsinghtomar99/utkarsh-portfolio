@@ -34,9 +34,9 @@ const Projects = () => {
               ))
             : (<>
               <h1
-                    className= "text-tertiary border-tertiary border-l-4 -ml-[3px] bg-[#12806473] py-3"
+                    className= "text-tertiary border-tertiary border-l-4 -ml-[3px] bg-[#12806473] py-3 px-5"
                   >
-                    ❌
+                    ⚠
                   </h1>
             </>)
             }
