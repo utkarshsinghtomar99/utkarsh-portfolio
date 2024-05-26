@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require("cors");
+// const cors = require("cors");
 const { connectDB } = require("./config/db_config");
 require("dotenv").config();
 const path = require("path");
@@ -7,12 +7,12 @@ const path = require("path");
 const app = express();
 const port = process.env.PORT;
 
-const corsOptions = {
-  origin: "https://utkarsh-portfolio-4ijs.onrender.com/", // frontend URI (ReactJS)
-};
+// const corsOptions = {
+//   origin: "https://utkarsh-portfolio-4ijs.onrender.com/", // frontend URI (ReactJS)
+// };
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 connectDB();
 
