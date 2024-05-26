@@ -14,17 +14,8 @@ const About = () => {
       <SectionTitle title={`About`} />
       <div className="flex w-full items-center sm:flex-col gap-x-10">
         <div className="h-[70vh] w-1/2 sm:w-full flex items-center">
-          {/* <lottie-player
-            src={lottieUrl || "..."}
-            background="transparent"
-            speed="1"
-            autoplay
-            loop
-            direction="1"
-            mode="normal"
-          ></lottie-player> */}
           <img
-            className=" w-72 rounded-full mx-auto"
+            className=" w-72 rounded-full mx-auto sm:w-60"
             src={aboutMe}
             alt="my avatar profile pic"
           />
@@ -38,11 +29,11 @@ const About = () => {
         <h1 className="text-tertiary text-xl">
           Here are few technologies I&apos;ve been working with recently
         </h1>
-        <div className="flex flex-wrap gap-10 mt-5">
+        <div className="flex flex-wrap gap-10 sm:gap-5 mt-5">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="border border-tertiary py-3 px-10 rounded-lg"
+              className="border border-tertiary py-3 px-10 sm:px-5 rounded-lg hover:bg-cyan-800 hover:border-cyan-300 text-tertiary hover:text-white"
             >
               <h1 className="text-tertiary">{skill}</h1>
             </div>
