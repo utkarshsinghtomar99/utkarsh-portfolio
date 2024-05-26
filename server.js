@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT;
 
 const corsOptions = {
-  origin: "http://localhost:5173", // frontend URI (ReactJS)
+  origin: "https://utkarsh-portfolio-4ijs.onrender.com/", // frontend URI (ReactJS)
 };
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
