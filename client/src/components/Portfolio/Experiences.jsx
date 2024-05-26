@@ -34,7 +34,9 @@ const Experiences = () => {
               ))
             : "No Info"}
         </div>
-        <div className="flex flex-col gap-5">
+        {
+          experiences.length
+          ? <div className="flex flex-col gap-5">
           <h1 className="text-secondary text-xl">
             {experiences.length
               ? experiences[selectedItemIndex].title
@@ -54,6 +56,14 @@ const Experiences = () => {
             {/* here is the description */}
           </p>
         </div>
+          : (<>
+            <div className=" h-40 flex items-center justify-center">
+            <h1 className="text-3xl sm:text-xl p-5 font-bold text-center bg-red-200 rounded-xl text-red-700">
+              No Experience Detected
+            </h1>
+          </div>
+          </>)
+        }
       </div>
     </>
   );
