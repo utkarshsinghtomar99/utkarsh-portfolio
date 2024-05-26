@@ -13,7 +13,7 @@ const Experiences = () => {
     <>
       <SectionTitle title={`Experiences`} />
       <div className="flex py-10 gap-10 sm:flex-col">
-        <div className="flex flex-col gap-10 border-[#0a7e65a9] w-1/3 sm:flex-row sm:overflow-x-scroll sm:w-full">
+        <div className="flex flex-col gap-10 border-[#0a7e65a9] border-l-2 w-1/3 sm:flex-row sm:overflow-x-scroll sm:w-full">
           {experiences.length
             ? experiences.map((experience, index) => (
                 <div
@@ -24,7 +24,7 @@ const Experiences = () => {
                   <h1
                     className={`text-xl px-5 py-2 ${
                       selectedItemIndex === index
-                        ? "text-tertiary border-tertiary border-l-4 -ml-[3px] bg-[#12806473]"
+                        ? "text-tertiary border-tertiary border-l-4 py-3 sm:py-0 -ml-[3px] bg-[#12806473]"
                         : "text-white"
                     }`}
                   >
