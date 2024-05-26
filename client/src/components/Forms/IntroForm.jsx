@@ -139,7 +139,7 @@ const IntroForm = () => {
           <div className="flex items-center justify-end gap-5">
             {!editMode.isEdit ? (
               <Button outline onClick={() => handleEdit(intro)}>
-                update intro
+                Update Intro
               </Button>
             ) : (
               <div className="flex gap-5 items-center justify-end">
