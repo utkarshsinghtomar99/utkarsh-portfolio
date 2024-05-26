@@ -2,7 +2,7 @@ import axios from "axios";
 
 const getPortfolioData = async () => {
   try {
-    const res = await axios.get("http://localhost:5000/api/portfolio/");
+    const res = await axios.get("https://utkarsh-portfolio-4ijs.onrender.com//api/portfolio/");
     return res.data;
   } catch (error) {
     console.log(error);
