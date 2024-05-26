@@ -15,7 +15,7 @@ const Projects = () => {
       <div className="flex py-10 gap-10 sm:flex-col">
         <div className="flex flex-col gap-10 border-l-2 border-[#0a7e65a9] w-1/3 sm:flex-row sm:overflow-x-scroll sm:w-full">
           {projects.length 
-            && projects.map((project, index) => (
+            ? projects.map((project, index) => (
                 <div
                   key={index}
                   onClick={() => setSelectedItemIndex(index)}
@@ -32,6 +32,13 @@ const Projects = () => {
                   </h1>
                 </div>
               ))
+            : (<>
+              <h1
+                    className= "text-tertiary border-tertiary border-l-4 -ml-[3px] bg-[#12806473] py-3"
+                  >
+                    ❌
+                  </h1>
+            </>)
             }
         </div>
         {
