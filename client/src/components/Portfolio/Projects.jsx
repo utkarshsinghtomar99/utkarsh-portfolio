@@ -14,8 +14,8 @@ const Projects = () => {
       <SectionTitle title={`Projects`} />
       <div className="flex py-10 gap-10 sm:flex-col">
         <div className="flex flex-col gap-10 border-l-2 border-[#0a7e65a9] w-1/3 sm:flex-row sm:overflow-x-scroll sm:w-full">
-          {projects.length
-            ? projects.map((project, index) => (
+          {projects.length 
+            && projects.map((project, index) => (
                 <div
                   key={index}
                   onClick={() => setSelectedItemIndex(index)}
@@ -32,28 +32,26 @@ const Projects = () => {
                   </h1>
                 </div>
               ))
-            : "No Info"}
+            }
         </div>
         {
           experience.length
           ? <div className="flex items-center justify-center gap-10 sm:flex-col">
           <img
             // src={projects[selectedItemIndex].image}
-            src={projects.length ? projects[selectedItemIndex].image : "..."}
+            src={projects[selectedItemIndex].image}
             alt="..."
             className="h-60 w-72"
           />
           <div className="flex flex-col gap-5">
             <h1 className="text-secondary text-xl">
-              <a href={projects.length ? projects[selectedItemIndex].link : "no info"}>
-                {projects.length ? projects[selectedItemIndex].title : "no info"}
+              <a href={projects[selectedItemIndex].link}>
+                {projects[selectedItemIndex].title}
               </a>
               {/* Here is project title */}
             </h1>
             <p className="text-white">
-              {projects.length
-                ? projects[selectedItemIndex].description
-                : "No Info"}
+              {projects[selectedItemIndex].description}
               {/* Heere is the project description */}
             </p>
           </div>
