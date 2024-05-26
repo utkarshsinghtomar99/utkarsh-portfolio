@@ -14,7 +14,7 @@ const updateData = async (updatingData) => {
   const { modelName, modelId, data } = updatingData;
 
   const res = await axios.put(
-    `http://localhost:5000/api/portfolio/update/${modelName}/${modelId}`,
+    `/api/portfolio/update/${modelName}/${modelId}`,
     data
   );
   return res.data;
@@ -25,7 +25,7 @@ const deleteData = async (deletingData) => {
   const { modelName, modelId } = deletingData;
 
   const res = await axios.delete(
-    `http://localhost:5000/api/portfolio/delete/${modelName}/${modelId}`
+    `/api/portfolio/delete/${modelName}/${modelId}`
   );
   return res.data;
 };
@@ -34,7 +34,7 @@ const deleteData = async (deletingData) => {
 const createData = async (creatingData) => {
   const { modelName, data } = creatingData;
   const res = await axios.post(
-    `http://localhost:5000/api/portfolio/create/${modelName}`,
+    `/api/portfolio/create/${modelName}`,
     data
   );
   return res.data;
