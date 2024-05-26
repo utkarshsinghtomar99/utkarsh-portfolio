@@ -65,7 +65,7 @@ const Projects = () => {
         </div>
           : (<>
             <div className=" h-40 flex items-center justify-center">
-            <h1 className="text-3xl p-5 font-bold text-center bg-red-200 rounded-xl text-red-700">
+            <h1 className="text-3xl sm:text-xl p-5 font-bold text-center bg-red-200 rounded-xl text-red-700">
               No Projects Detected
             </h1>
           </div>
