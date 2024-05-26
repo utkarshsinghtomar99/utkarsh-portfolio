@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <>
-      <Navbar fluid className="bg-slate-800 px-11 sticky top-0 z-[999]">
+      <Navbar fluid className="bg-slate-800 px-11">
         <NavbarBrand href="#">
           <span className="flex items-center gap-4 self-center whitespace-nowrap text-xl text-white sm:flex-row-reverse">
             <img className=" h-10 w-10" src={logo} alt="" />
