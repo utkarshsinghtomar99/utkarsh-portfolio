@@ -24,12 +24,12 @@ const Header = () => {
     <>
       <Navbar fluid className="bg-slate-800 px-11 sticky top-0 z-[999]">
         <NavbarBrand href="#">
-          <span className="flex items-center gap-4 self-center whitespace-nowrap text-xl text-white">
+          <span className="flex items-center gap-4 self-center whitespace-nowrap text-xl text-white sm:flex-row-reverse">
             <img className=" h-10 w-10" src={logo} alt="" />
             Portfolio Admin Panel
           </span>
         </NavbarBrand>
-        <div className="flex sm:mt-3">
+        <div className="flex sm:mt-4">
           <Button className="rounded-full" onClick={handleLogout} type="submit">
             logout
           </Button>
