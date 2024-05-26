@@ -30,7 +30,7 @@ const Header = () => {
           </span>
         </NavbarBrand>
         <div className="flex sm:mt-4">
-          <Button className="rounded-full" onClick={handleLogout} type="submit">
+          <Button size="xs" className="rounded-full" onClick={handleLogout} type="submit">
             logout
           </Button>
         </div>
