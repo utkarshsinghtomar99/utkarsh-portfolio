@@ -32,7 +32,14 @@ const Experiences = () => {
                   </h1>
                 </div>
               ))
-            : "No Info"}
+            : (<>
+              <h1
+                    className= "text-tertiary border-tertiary border-l-4 -ml-[3px] bg-[#12806473] py-3 px-5"
+                  >
+                    ⚠
+                  </h1>
+            </>)
+          }
         </div>
         {
           experiences.length
