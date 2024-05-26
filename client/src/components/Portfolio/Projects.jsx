@@ -34,7 +34,9 @@ const Projects = () => {
               ))
             : "No Info"}
         </div>
-        <div className="flex items-center justify-center gap-10 sm:flex-col">
+        {
+          experience.length
+          ? <div className="flex items-center justify-center gap-10 sm:flex-col">
           <img
             // src={projects[selectedItemIndex].image}
             src={projects.length ? projects[selectedItemIndex].image : "..."}
@@ -43,7 +45,9 @@ const Projects = () => {
           />
           <div className="flex flex-col gap-5">
             <h1 className="text-secondary text-xl">
-              {projects.length ? projects[selectedItemIndex].title : "no info"}
+              <a href={projects.length ? projects[selectedItemIndex].link : "no info"}>
+                {projects.length ? projects[selectedItemIndex].title : "no info"}
+              </a>
               {/* Here is project title */}
             </h1>
             <p className="text-white">
@@ -54,6 +58,14 @@ const Projects = () => {
             </p>
           </div>
         </div>
+          : (<>
+            <div className=" h-40 flex items-center justify-center">
+            <h1 className="text-3xl p-5 font-bold text-center bg-red-200 rounded-xl text-red-700">
+              No Experience Detected
+            </h1>
+          </div>
+          </>)
+        }
       </div>
     </>
   );
