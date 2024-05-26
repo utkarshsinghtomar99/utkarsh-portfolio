@@ -13,7 +13,7 @@ const Experiences = () => {
     <>
       <SectionTitle title={`Experiences`} />
       <div className="flex py-10 gap-10 sm:flex-col">
-        <div className="flex flex-col gap-10 border-l-2 border-[#0a7e65a9] w-1/3 sm:flex-row sm:overflow-x-scroll sm:w-full">
+        <div className="flex flex-col gap-10 border-l-2 sm:border-t-2 border-[#0a7e65a9] w-1/3 sm:flex-row sm:overflow-x-scroll sm:w-full">
           {experiences.length
             ? experiences.map((experience, index) => (
                 <div
