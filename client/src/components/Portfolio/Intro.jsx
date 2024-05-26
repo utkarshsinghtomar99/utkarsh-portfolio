@@ -15,7 +15,7 @@ const Intro = () => {
         <h1 className="sm:text-3xl text-7xl text-white font-semibold">
           {caption || ""}
         </h1>
-        <p className="text-white w-2/3">{description || ""}</p>
+        <p className="text-white w-2/3 sm:w-full sm:text-justify">{description || ""}</p>
         <button className="border-2 border-cyan-600 text-cyan-600 px-10 py-3 rounded-xl hover:bg-cyan-800 hover:text-white hover:border-cyan-400">
           Get Started
         </button>
