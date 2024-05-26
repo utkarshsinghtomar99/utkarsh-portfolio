@@ -35,7 +35,7 @@ const Projects = () => {
             }
         </div>
         {
-          experience.length
+          projects.length
           ? <div className="flex items-center justify-center gap-10 sm:flex-col">
           <img
             // src={projects[selectedItemIndex].image}
@@ -59,7 +59,7 @@ const Projects = () => {
           : (<>
             <div className=" h-40 flex items-center justify-center">
             <h1 className="text-3xl p-5 font-bold text-center bg-red-200 rounded-xl text-red-700">
-              No Experience Detected
+              No Projects Detected
             </h1>
           </div>
           </>)
