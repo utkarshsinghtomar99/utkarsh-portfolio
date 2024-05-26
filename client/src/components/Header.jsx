@@ -29,7 +29,7 @@ const Header = () => {
             Portfolio Admin Panel
           </span>
         </NavbarBrand>
-        <div className="flex md:order-2">
+        <div className="flex sm:mt-3">
           <Button className="rounded-full" onClick={handleLogout} type="submit">
             logout
           </Button>
